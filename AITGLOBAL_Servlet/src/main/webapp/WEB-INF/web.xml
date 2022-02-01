@@ -1,0 +1,51 @@
+
+<web-app>
+<welcome-file-list>
+<welcome-file>AddStud.html</welcome-file>
+</welcome-file-list>
+ 
+<servlet>
+<servlet-name>s1</servlet-name>
+<servlet-class>com.tqpp.FirstServlet</servlet-class>
+</servlet>
+
+
+<servlet-mapping>
+<servlet-name>s1</servlet-name>
+<url-pattern>/hello</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>s2</servlet-name>
+<servlet-class>com.tqpp.SecondServlet</servlet-class>
+</servlet>
+<servlet>
+	<description>
+	</description>
+	<display-name>AddStudent</display-name>
+	<servlet-name>AddStudent</servlet-name>
+	<servlet-class>com.tqpp.AddStudent</servlet-class>
+</servlet>
+<servlet>
+	<description>
+	</description>
+	<display-name>ThirdStudDispatcher</display-name>
+	<servlet-name>ThirdStudDispatcher</servlet-name>
+	<servlet-class>com.tqpp.ThirdStudDispatcher</servlet-class>
+</servlet>
+
+
+<servlet-mapping>
+<servlet-name>s2</servlet-name>
+<url-pattern>/second</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>AddStudent</servlet-name>
+	<url-pattern>/AddStudent</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>ThirdStudDispatcher</servlet-name>
+	<url-pattern>/ThirdStudDispatcher</url-pattern>
+</servlet-mapping>
+</web-app>

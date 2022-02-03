@@ -13,7 +13,29 @@
     <property name="show_sql">true</property>
     <property name="hbm2ddl.auto">update</property>
     
-    <mapping class="com.entity.Student"/>
+   <!--   <mapping class="com.entity.Student"/> -->
+   
+   <!--  <mapping class="com.method.Student1"/>  -->
+    
+   <!--   <mapping class="com.emebeddble.Address"/>
+   <mapping class="com.emebeddble.StudDetails"/> -->
+          
+   
+  <!--   <mapping class="com.oneToone.Vehicle1"/>
+   <mapping class="com.oneToone.Person1"/> -->
+   
+   <!-- <mapping class="com.OneTomany.Department"/>
+   <mapping class="com.OneTomany.Employee"/>  -->
+   
+  <!--  <mapping class="com.ManyToone.Dept1"/>
+   <mapping class="com.ManyToone.Emp1"/> --> 
+   
+  <!--   <mapping class="com.ByDirectionMapping.Department2"/>
+   <mapping class="com.ByDirectionMapping.Employee2"/> -->
+   
+  <!--   <mapping class="com.HQLDemo.Teacher"/> -->
+  
+  
     
   </session-factory>
 </hibernate-configuration>

@@ -35,7 +35,17 @@
    
   <!--   <mapping class="com.HQLDemo.Teacher"/> -->
   
+ <!--   <mapping class="com.inherit.Teacher1"/>
+  <mapping class="com.inherit.PermanentTeacher"/>
+  <mapping class="com.inherit.VisitingTeacher"/>  -->
   
+  
+ <!--   <mapping class="com.ManyTomany.Question"/>
+  <mapping class="com.ManyTomany.Answer"/>  -->
+  
+  
+   <mapping class="com.CollectionListMapped.Question1"/>
+  <mapping class="com.CollectionListMapped.Answer1"/>
     
   </session-factory>
 </hibernate-configuration>

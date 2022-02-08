@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 
+ <!-- property tag using getter setter -->
+ <bean id="s1" class="com.AIT.Student">
+ <property name="sid" value="101"></property>
+ <property name="sname" value="Mohit"></property>
+ <property name="percentage" value="90"></property>
+ <property name="course" ref="c2"></property>
+ </bean>
+ 
+ <bean id="s2" class="com.AIT.Student">
+ <property name="sid" value="102"></property>
+ <property name="sname" value="Rohit"></property>
+ <property name="percentage" value="50"></property>
+ <property name="course" ref="c1"></property>
+ </bean>
+ 
+ <!-- Constructor tag using Constructor -->
+ <bean id="c1" class="com.AIT.Course">
+ <constructor-arg value="Java"/>
+ <constructor-arg value="15000"/>
+ </bean>
+ 
+ 
+ <bean id="c2" class="com.AIT.Course">
+ <constructor-arg value="Python"/>
+ <constructor-arg value="20000"/>
+ </bean>
+ 
+ <!-- Scope =scope is by default singleton & this example for prototype
+ prototype=object is not create in prototype for object we call getBean method -->
+ <bean id="s3" class="com.AIT.Student">
+ <property name="sid" value="103"></property>
+ <property name="sname" value="Vijay"></property>
+ <property name="percentage" value="75"></property>
+ <property name="course" ref="c3"></property>
+ </bean>
+ 
+ <bean id="c3" class="com.AIT.Course">
+ <constructor-arg value="C++"/>
+ <constructor-arg value="5000"/>
+ </bean>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ </beans>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+  
+  <context:annotation-config/>
+  
+<bean id="s1" class="com.map.Student">
+<constructor-arg  value="1"/>
+<constructor-arg  value="mohit"/>
+</bean>
+<bean id="s2" class="com.map.Student">
+<constructor-arg value="2"/>
+<constructor-arg  value="rushi"/>
+</bean>
+
+<bean id="t1" class="com.map.Trainer">
+<constructor-arg value="101"/>
+<constructor-arg  value="Kirti"/>
+</bean>
+<bean id="t2" class="com.map.Trainer">
+<constructor-arg  value="102"/>
+<constructor-arg  value="Deepa"/>
+</bean>
+
+<bean id="i1" class="com.map.Institute">
+<constructor-arg  value="1100"/>
+<constructor-arg  value="tqpp"/>
+<constructor-arg>
+<map>
+<entry key-ref="s1" value-ref="t1" />
+<entry key-ref="s2" value-ref="t2"></entry>
+</map>
+</constructor-arg>
+</bean>
+</beans>

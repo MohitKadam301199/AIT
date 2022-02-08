@@ -1,0 +1,48 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+      xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:context = "http://www.springframework.org/schema/context"
+      xsi:schemaLocation = "http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+      http://www.springframework.org/schema/context
+      http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+      <context:annotation-config/>
+ 
+ <!--  
+ //for setter anotation
+ 
+ <bean id="s1" class="com.autowiredAnotation.Student">
+
+ </bean>
+ 
+ <bean id="course" class="com.autowiredAnotation.Course">
+ <property name="cid" value="1"></property>
+ <property name="cname" value="java"></property>
+ <property name="fees" value="5000"></property>
+ </bean>
+ 
+ <bean id="trainer" class="com.autowiredAnotation.Trainer">
+ <property name="tname" value="Deepa"></property>
+ </bean>
+ 
+ -->
+ 
+ 
+ 
+ <bean id="s2" class="com.autowiredAnotation.Student">
+ <constructor-arg value="1" type="int"></constructor-arg>
+ <constructor-arg value="Mohit"></constructor-arg>
+ </bean>
+ 
+ <bean id="course" class="com.autowiredAnotation.Course">
+ <constructor-arg value="1" type="int"></constructor-arg>
+ <constructor-arg value="c++"></constructor-arg>
+ <constructor-arg value="2500" type="int"></constructor-arg>
+ </bean>
+ 
+ <bean id="trainer" class="com.autowiredAnotation.Trainer">
+ <constructor-arg value="Kirti" ></constructor-arg>
+ </bean>
+ 
+ 
+ </beans>

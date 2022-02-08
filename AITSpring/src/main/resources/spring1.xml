@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 
+ <!-- Code for autowiring package -->
+ 
+ <!--  <bean id="t1" class="com.autowiring.Teacher" autowire="byType">
+ <property name="tid" value="1"></property>
+ <property name="tname" value="Deepa"></property>
+ </bean>
+ 
+ <bean id="Subject" class="com.autowiring.Subject">
+ <constructor-arg value="1"/>
+ <constructor-arg value="Java"/>
+ </bean>
+ 
+ -->
+ 
+ <bean id="t2" class="com.autowiring.Teacher" autowire="byName">
+ <property name="tid" value="2"></property>
+ <property name="tname" value="Jayashree"></property>
+ </bean>
+ 
+ <bean id="subject" class="com.autowiring.Subject">
+ <constructor-arg value="2"/>
+ <constructor-arg value="Python"/>
+ </bean>
+ 
+ 
+ 
+ </beans>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+  
+  <context:annotation-config/>
+
+<bean id="d1" class="com.CollectionList.Department">
+<constructor-arg name="did" value="101"/>
+<constructor-arg name="dname" value="It"/>
+</bean> 
+
+<bean id="d2" class="com.CollectionList.Department">
+<constructor-arg name="did" value="102"/>
+<constructor-arg name="dname" value="Sales"/>
+</bean>
+<bean id="e1" class="com.CollectionList.Employee">
+<constructor-arg name="eid" value="1"/>
+<constructor-arg name="ename" value="mohit"/>
+<constructor-arg >
+<list>
+<ref bean="d1"/>
+<ref bean="d2"/>
+</list>
+</constructor-arg>
+</bean> 
+
+
+</beans>

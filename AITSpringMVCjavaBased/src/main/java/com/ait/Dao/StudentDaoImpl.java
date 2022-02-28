@@ -32,8 +32,7 @@ public class StudentDaoImpl implements StudentDao {
 		return false;
 	}
 
-	@Override
-	
+	@Override	
 	public List<Student> getAllStudents() {
 		Query<Student> q=sessionFactory.getCurrentSession().createQuery("from Student");
 		List<Student> studlist=q.list();

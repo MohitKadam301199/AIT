@@ -19,15 +19,15 @@ public class SecondServlet extends HttpServlet {
 		
 		//comment code is Self code
 		PrintWriter out = response.getWriter();
-//		out.print("<html>");
-//		out.print("<body bgcolor='red'> <h1> Welcome user "+nm+"</h1>");
-//		out.print("<h3> Your email is "+email+"</h3>");
-//		out.print("</body></html>");
+		out.print("<html>");
+		out.print("<body bgcolor='red'> <h1> Welcome user "+nm+"</h1>");
+		out.print("<h3> Your email is "+email+"</h3>");
+		out.print("</body></html>");
 		
 		
 		//this code is for Student third code
-		RequestDispatcher rd=request.getRequestDispatcher("Add.jsp");
-		rd.forward(request, response);
+//		RequestDispatcher rd=request.getRequestDispatcher("Add.jsp");
+//		rd.forward(request, response);
 		
 	
 	}
